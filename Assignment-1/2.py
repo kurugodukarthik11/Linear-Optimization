@@ -26,6 +26,10 @@ def SimplexAlgorithm(M):
 
         v = Z[positive_cost_directions[0]]
 
+        if len(np.where(np.dot(A, v) > 0)[0]) == 0:
+            print('Given LP is Unbounded')
+            return None
+
         n = B_utgt - (A_utgt @ X)
         d = A_utgt @ v
         n = n[np.where(d > 0)[0]]
@@ -36,11 +40,9 @@ def SimplexAlgorithm(M):
 
 
 if __name__ == "__main__":
-    A = np.array([[2, 1, 0], [1, 2, -2], [0, 1, 2], [-1, 0, 0], [0, -1, 0], [0, 0, -1]])
-    B = np.array([10, 20, 5, 0, 0, 0])
-    C = np.array([2, -1, 2])
-    X = np.array([5, 0, 0])
-    M = np.array(
-        [[5, 0, 0, 0], [2, -1, 2, 0], [2, 1, 0, 10], [1, 2, -2, 20], [0, 1, 2, 5], [-1, 0, 0, 0], [0, -1, 0, 0],
-         [0, 0, -1, 0]])
+    A = np.array([[1, -1], [2, -1], [-1, 0], [0, -1]])
+    B = np.array([10, 40, 0, 0])
+    C = np.array([2, 1])
+    X = np.array([10, 0])
+    M = np.array([[10, 0, 0], [2, 1, 0], [1, -1, 10], [2, -1, 40], [-1, 0, 0], [0, -1, 0]])
     SimplexAlgorithm(M)
