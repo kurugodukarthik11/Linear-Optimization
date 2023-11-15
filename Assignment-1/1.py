@@ -24,12 +24,14 @@ def SimplexAlgorithm(M):
             print('Objective Value : ', C @ X)
             return X
 
+        print("Current Solution : ", X)
+        print("Current Objective Value : ", C @ X)
+
         v = Z[positive_cost_directions[0]]
 
-        n = B_utgt - (A_utgt @ X)
-        d = A_utgt @ v
-        n = n[np.where(d > 0)[0]]
-        d = d[np.where(d > 0)[0]]
+        indices = np.where(A_utgt @ v > 0)[0]
+        n = (B_utgt - (A_utgt @ X))[indices]
+        d = (A_utgt @ v)[indices]
         s = n / d
         t = np.min(s[s >= 0])
         X = X + t * v
