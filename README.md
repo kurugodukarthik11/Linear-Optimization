@@ -17,7 +17,7 @@ Input: CSV file with `m+2` rows & `n+1` columns:
 
 Output: You need to print the sequence of vertices visited and the value of the objective function at that vertex.
 
-### Solution: [Question 1](https://github.com/kurugodukarthik11/Linear-Optimization/blob/main/Assignment/Q1.py)
+### Solution: [Question 1](https://github.com/kurugodukarthik11/Linear-Optimization/blob/main/Assignments/Q1.py)
 
 ## Question 2:
 
@@ -35,7 +35,7 @@ Input: CSV file with `m+2` rows & `n+1` columns:
 
 Output: You need to print the sequence of vertices visited and the value of the objective function at that vertex.
 
-### Solution: [Question 2](https://github.com/kurugodukarthik11/Linear-Optimization/blob/main/Assignment/Q2.py)
+### Solution: [Question 2](https://github.com/kurugodukarthik11/Linear-Optimization/blob/main/Assignments/Q2.py)
 
 ## Question 3:
 
@@ -52,7 +52,7 @@ Input: CSV file with `m+2` rows & `n+1` columns:
 
 Output: You need to print the sequence of vertices visited and the value of the objective function at that vertex.
 
-### Solution: [Question 3](https://github.com/kurugodukarthik11/Linear-Optimization/blob/main/Assignment/Q3.py)
+### Solution: [Question 3](https://github.com/kurugodukarthik11/Linear-Optimization/blob/main/Assignments/Q3.py)
 
 ## Question 4:
 
@@ -68,4 +68,4 @@ Input: CSV file with `m+1` rows & `n+1` columns:
 
 Output: You need to print the sequence of vertices visited and the value of the objective function at that vertex.
 
-### Solution: [Question 4](https://github.com/kurugodukarthik11/Linear-Optimization/blob/main/Assignment/Q4.py)
+### Solution: [Question 4](https://github.com/kurugodukarthik11/Linear-Optimization/blob/main/Assignments/Q4.py)
