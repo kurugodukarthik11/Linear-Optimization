@@ -4,6 +4,13 @@ Karthik Kurugodu - MA20BTECH11008
 Nikhil Kongara - MA20BTECH11011
 Sai Prateek Katkam - ES20BTECH11024
 Prajwaldeep Kamble - MA20BTECH11013
+
+Question:
+Implement simplex algorithm with the following assumptions:
+1. Polytope is bounded
+2. Non-degenerate
+3. Rank of matrix is equal to the number of columns
+Input:
 """
 
 import numpy as np
